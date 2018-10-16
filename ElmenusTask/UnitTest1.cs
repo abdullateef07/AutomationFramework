@@ -31,15 +31,14 @@ namespace ElmenusTask
         {
             GamesPage page = new GamesPage(driver);
             page.GamesTab.Click();
-            // 
+            // range slider action
             Actions SliderAction = new Actions(driver);
             SliderAction.DragAndDropToOffset(page.RangeSlider, -50, 0).Perform();
-
+            // move to cart view 
             Actions CartAction = new Actions(driver);
             CartAction.MoveToElement(page.Seconditem).Perform();
             page.AddToCartView.Click();
-
-
+            // move to menuheader
             Actions ViewCart = new Actions(driver);
             ViewCart.MoveToElement(page.MenuHeader).Perform();
             Thread.Sleep(2000);
@@ -53,7 +52,7 @@ namespace ElmenusTask
 
         public void scenario2()
         {
-
+            // move to cartpage 
             CartPage page2 = new CartPage(driver);
             page2.AddToCartBtn.Click();
             page2.CheckoutBtn.Click();
@@ -64,11 +63,12 @@ namespace ElmenusTask
         }
 
         public void scenario3()
-        {
+        {   // move to DeliveryDetailspage
             DeliveryDetails page3 = new DeliveryDetails(driver);
             page3.GenderRbtn.Click();
             page3.firstNameF.SendKeys("Abdullateef");
             page3.lastNameF.SendKeys("Mamdouh");
+            //handle datepicker using JavaScriptExcuter
             IJavaScriptExecutor Datepicker = (IJavaScriptExecutor)driver;
             Datepicker.ExecuteScript("document.getElementById('datepicker').value='10/01/1992'");
             page3.emailAddrF.SendKeys("cseabdo@gmail.com");
