@@ -1,6 +1,7 @@
 # AutomationFramework
 Hi our Automation Framework Structure consists of 
-1-Base (will be implemented in next realese) itwill have base libraries which considered as heart and soul of our framework , since here exsit all the libraries required by automation test to execute (will be implemented in next realese)
+
+1-Base (will be implemented in next realese) itwill have base libraries which considered as heart and soul of our framework , since here exsit all the libraries required by automation test to execute 
 and it should contains :
 - BasePage (or Page Object Model )
 - baseStep (For step Defientions in Specflow)
@@ -12,6 +13,7 @@ and it should contains :
 - which browser we are going to work with 
 - which application build 
 - who is executing he test
+
 3- Extensisons (will be implemented in next realese):some special static classes which will add more power to your existing selenium webdriver libraries which enables you to "add methods to existing without creating a new derived type , recompiling , or otherwise modifying the original type it will contains:
 - Webdriver Extensions 
 - WebElement Extensions 
