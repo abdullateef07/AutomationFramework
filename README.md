@@ -13,6 +13,7 @@ and it should contains :
 - which browser we are going to work with 
 - which application build 
 - who is executing he test
+
 3- Extensisons (will be implemented in next realese):some special static classes which will add more power to your existing selenium webdriver libraries which enables you to "add methods to existing without creating a new derived type , recompiling , or otherwise modifying the original type it will contains:
 - Webdriver Extensions 
 - WebElement Extensions 
