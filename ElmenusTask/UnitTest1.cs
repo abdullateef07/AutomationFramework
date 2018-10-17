@@ -21,12 +21,12 @@ namespace ElmenusTask
         {   driver = new ChromeDriver(@"C:\Users\user-\Downloads\Compressed");
             driver.Navigate().GoToUrl(URL);
 
-            scenario1();
-            scenario2();
-            scenario3();
+            Step1();
+            Step2();
+            Step3();
         }
 
-        public void scenario1()
+        public void Step1()
 
         {
             GamesPage page = new GamesPage(driver);
@@ -50,7 +50,7 @@ namespace ElmenusTask
 
         }
 
-        public void scenario2()
+        public void Step2()
         {
             // move to cartpage 
             CartPage page2 = new CartPage(driver);
@@ -62,7 +62,7 @@ namespace ElmenusTask
 
         }
 
-        public void scenario3()
+        public void Step3()
         {   // move to DeliveryDetailspage
             DeliveryDetails page3 = new DeliveryDetails(driver);
             page3.GenderRbtn.Click();
