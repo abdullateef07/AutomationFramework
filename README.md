@@ -4,7 +4,7 @@ Hi our Automation Framework Structure consists of
 1-Base (will be implemented in next realese) itwill have base libraries which considered as heart and soul of our framework , since here exsit all the libraries required by automation test to execute 
 and it should contains :
 - BasePage (or Page Object Model )
-- baseStep (For step Defientions in Specflow)
+- baseStep (For step Defientions in Specflow) i am planning to use cucumber 
 - Browser (For your browser)
 - DeriverContext(your actual Iwebdriver object)
 - TestinitializeHook (Framework gets it's life from here)
