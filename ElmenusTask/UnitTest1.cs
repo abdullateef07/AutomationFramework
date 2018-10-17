@@ -45,8 +45,10 @@ namespace ElmenusTask
             Assert.IsTrue(page.MenuHeadertxt.Text.Contains("$79.99"));
             page.FirstElement.Click();
             Thread.Sleep(4000);
+            //WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
+           // wait.Until(ExpectedConditions.ElementIsVisible(page.MenuHeader));
 
-         
+
 
         }
 

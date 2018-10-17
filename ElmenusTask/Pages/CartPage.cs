@@ -5,15 +5,17 @@ using System.Text;
 using System.Threading.Tasks;
 using OpenQA.Selenium.Support.PageObjects;
 using OpenQA.Selenium;
+using AutomationFramework.Base;
+
 
 namespace ElmenusTask.Pages
 {
-    class CartPage
+    class CartPage : BasePage
     {
-        public CartPage(IWebDriver driver)
+        public CartPage(IWebDriver driver) : base(driver)
 
         {
-            PageFactory.InitElements(driver, this);
+           
         }
 
         [FindsBy(How = How.XPath, Using = "//*[@id='AddToCartForm']/div[6]/a")]

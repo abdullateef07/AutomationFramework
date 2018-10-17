@@ -1,4 +1,5 @@
-﻿using OpenQA.Selenium;
+﻿using AutomationFramework.Base;
+using OpenQA.Selenium;
 using OpenQA.Selenium.Support.PageObjects;
 using System;
 using System.Collections.Generic;
@@ -8,12 +9,12 @@ using System.Threading.Tasks;
 
 namespace AutomationFramework.Pages
 {
-    class DeliveryDetails
+    class DeliveryDetails : BasePage
     {       // Initialize page 
-        public DeliveryDetails(IWebDriver driver)
+        public DeliveryDetails(IWebDriver driver): base(driver)
 
         {
-            PageFactory.InitElements(driver, this);
+            
         }
 
         //Objects for the CartInfoPage page

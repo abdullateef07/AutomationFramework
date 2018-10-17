@@ -1,14 +1,15 @@
 ﻿using OpenQA.Selenium.Support.PageObjects;
 using OpenQA.Selenium;
+using AutomationFramework.Base;
 
 namespace AutomationFramework.Pages
 {
-    class GamesPage
+    class GamesPage: BasePage
     {
         // Initialize page 
-        public GamesPage(IWebDriver driver)
+        public GamesPage(IWebDriver driver): base(driver)
         {
-            PageFactory.InitElements(driver, this);
+            
 
         }
 
