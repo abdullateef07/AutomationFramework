@@ -1,6 +1,7 @@
 # AutomationFramework
 Hi our Automation Framework Structure consists of 
-1-Base (will be implemented in next realese) itwill have base libraries which considered as heart and soul of our framework , since here exsit all the libraries required by automation test to execute (will be implemented in next realese)
+
+1-Base (will be implemented in next realese) itwill have base libraries which considered as heart and soul of our framework , since here exsit all the libraries required by automation test to execute 
 and it should contains :
 - BasePage (or Page Object Model )
 - baseStep (For step Defientions in Specflow)
